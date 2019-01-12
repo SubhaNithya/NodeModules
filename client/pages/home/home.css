@@ -1,0 +1,49 @@
+.container-fluid
+{
+	background-color:black;
+	padding:0px;
+}
+.navbar-brand
+{
+	color:white;
+}
+.col-sm-10
+{
+	background-color:#f1f1f1;
+	height:580px;
+}
+.navbar-inverse
+{
+	background-color:black;
+}
+a:hover
+{
+	text-decoration:none;
+	color:#f1f1f1;
+	display:block;
+}
+.button 
+{
+	float:right;
+	padding:5px;
+}
+h4
+{
+	float:bottom;
+}
+.style-one
+{
+	border:0;
+	height: 1px;
+	background: #333;
+}
+.row
+{
+	width:220px;
+}
+th
+{
+	padding:0px;
+	float:left;
+	width:250px;
+}
