@@ -14,6 +14,7 @@ const userReducer =(state = {user: []}, action) => {
 				return index === action.payload.id;
 			});
 
+			
 			const newuserToUpdate = {
 				name:action.payload.data.name,
 				email:action.payload.data.email,
@@ -32,7 +33,7 @@ const userReducer =(state = {user: []}, action) => {
 				user: [
 		    		...state.user.slice(0, action.payload),
 		    		...state.user.slice(action.payload + 1)
-		]}
+		]} 
 
 
 		default:
