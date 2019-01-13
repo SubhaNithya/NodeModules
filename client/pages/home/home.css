@@ -39,11 +39,17 @@ h4
 }
 .row
 {
-	width:220px;
+	width:250px;
+	background-color: #5F9EA0;
 }
 th
 {
 	padding:0px;
 	float:left;
 	width:250px;
+	background-color: #BC8F8F;
+}
+.table .table-striped
+{
+	background-color: #BC8F8F;	
 }

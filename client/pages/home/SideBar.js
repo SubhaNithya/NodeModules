@@ -129,7 +129,7 @@ class SideBar extends Component{
 				this.setState({
 					editedObjData:this.state.editedObjData
 				}, () => {
-					console.log("editedObjData", this.state.editedObjData)
+					console.log("editedObjData", this.state.editedObjData, index);
 					this.props.editUserData(this.state.editedObjData, index);
 				})
 			}
@@ -225,7 +225,7 @@ class SideBar extends Component{
 													<input type="text" defaultValue={user.name} onChange={this.getEditName.bind(this)} />
 													<input type="text" defaultValue={user.email} onChange={this.getEditEmail.bind(this)} />
 													<input type="text" defaultValue={user.phone} onChange={this.getEditPhone.bind(this)} />
-													<p onClick={this.toggleEditData.bind(this,user,index)}>Edit</p>
+													<p onClick={this.toggleEditData.bind(this,index,user)}>Edit</p>
 													<span style={{cursor: "pointer"}} onClick={this.deleteData.bind(this,index)}>X</span>
 												</div>
 											);
@@ -237,7 +237,7 @@ class SideBar extends Component{
 														<td className="row">{user.name}</td>
 														<td className="row">{user.email}</td>
 														<td className="row">{user.phone}</td>
-														<td><p onClick={this.editData.bind(this, user, index)}>EDIT</p>
+														<td className="row"><p onClick={this.editData.bind(this, user, index)}>EDIT</p>
               											<span style={{cursor: "pointer"}} onClick={this.deleteData.bind(this, index)}>X</span></td>
 													</tr>
 												</tbody>

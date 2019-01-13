@@ -7,9 +7,10 @@ export function sendObjectData(dataObject)
 }
 export function editUserData(data, indexById)
 {
+	
 	return{
-		type:"EDIT_USER_DATA" ,
-		payload:{data: data, id: indexById}
+		type: "EDIT_USER_DATA" ,
+		payload: {data: data, id: indexById}
 	};
 }
 export function deleteUserData(id)

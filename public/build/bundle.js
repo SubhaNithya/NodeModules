@@ -27043,7 +27043,7 @@ var SideBar = function (_Component) {
 					_this3.setState({
 						editedObjData: _this3.state.editedObjData
 					}, function () {
-						console.log("editedObjData", _this3.state.editedObjData);
+						console.log("editedObjData", _this3.state.editedObjData, index);
 						_this3.props.editUserData(_this3.state.editedObjData, index);
 					});
 				}
@@ -27309,7 +27309,7 @@ var SideBar = function (_Component) {
 												_react2.default.createElement('input', { type: 'text', defaultValue: user.phone, onChange: _this4.getEditPhone.bind(_this4) }),
 												_react2.default.createElement(
 													'p',
-													{ onClick: _this4.toggleEditData.bind(_this4, user, index) },
+													{ onClick: _this4.toggleEditData.bind(_this4, index, user) },
 													'Edit'
 												),
 												_react2.default.createElement(
@@ -27345,7 +27345,7 @@ var SideBar = function (_Component) {
 													),
 													_react2.default.createElement(
 														'td',
-														null,
+														{ className: 'row' },
 														_react2.default.createElement(
 															'p',
 															{ onClick: _this4.editData.bind(_this4, user, index) },
@@ -27404,6 +27404,7 @@ function sendObjectData(dataObject) {
 	};
 }
 function editUserData(data, indexById) {
+
 	return {
 		type: "EDIT_USER_DATA",
 		payload: { data: data, id: indexById }
@@ -27472,7 +27473,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(54)(false);
 // Module
-exports.push([module.i, ".container-fluid\r\n{\r\n\tbackground-color:black;\r\n\tpadding:0px;\r\n}\r\n.navbar-brand\r\n{\r\n\tcolor:white;\r\n}\r\n.col-sm-10\r\n{\r\n\tbackground-color:#f1f1f1;\r\n\theight:580px;\r\n}\r\n.navbar-inverse\r\n{\r\n\tbackground-color:black;\r\n}\r\na:hover\r\n{\r\n\ttext-decoration:none;\r\n\tcolor:#f1f1f1;\r\n\tdisplay:block;\r\n}\r\n.button \r\n{\r\n\tfloat:right;\r\n\tpadding:5px;\r\n}\r\nh4\r\n{\r\n\tfloat:bottom;\r\n}\r\n.style-one\r\n{\r\n\tborder:0;\r\n\theight: 1px;\r\n\tbackground: #333;\r\n}\r\n.row\r\n{\r\n\twidth:220px;\r\n}\r\nth\r\n{\r\n\tpadding:0px;\r\n\tfloat:left;\r\n\twidth:250px;\r\n}", ""]);
+exports.push([module.i, ".container-fluid\r\n{\r\n\tbackground-color:black;\r\n\tpadding:0px;\r\n}\r\n.navbar-brand\r\n{\r\n\tcolor:white;\r\n}\r\n.col-sm-10\r\n{\r\n\tbackground-color:#f1f1f1;\r\n\theight:580px;\r\n}\r\n.navbar-inverse\r\n{\r\n\tbackground-color:black;\r\n}\r\na:hover\r\n{\r\n\ttext-decoration:none;\r\n\tcolor:#f1f1f1;\r\n\tdisplay:block;\r\n}\r\n.button \r\n{\r\n\tfloat:right;\r\n\tpadding:5px;\r\n}\r\nh4\r\n{\r\n\tfloat:bottom;\r\n}\r\n.style-one\r\n{\r\n\tborder:0;\r\n\theight: 1px;\r\n\tbackground: #333;\r\n}\r\n.row\r\n{\r\n\twidth:250px;\r\n\tbackground-color: #5F9EA0;\r\n}\r\nth\r\n{\r\n\tpadding:0px;\r\n\tfloat:left;\r\n\twidth:250px;\r\n\tbackground-color: #BC8F8F;\r\n}\r\n.table .table-striped\r\n{\r\n\tbackground-color: #BC8F8F;\t\r\n}", ""]);
 
 
 

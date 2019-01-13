@@ -3,9 +3,9 @@ import {combineReducers} from 'redux';
 const userReducer =(state = {user: []}, action) => {
 	switch(action.type) {
 		case "ADD_USER_DATA" :
-		let user= state.user.concat(action.payload);
-		return {user};
-		break;
+			let user= state.user.concat(action.payload);
+			return {user};
+			break;
 
 		case "EDIT_USER_DATA" :
 			const currentUserToUpdate = [...state.user];
